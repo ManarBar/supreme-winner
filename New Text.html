@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Text Subjects Form</title>
+  <style>
+    /* Basic CSS to create the three columns */
+    .form-container {
+      display: flex;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    /* Style for the clickable text subjects */
+    .subject {
+      cursor: pointer;
+      margin: 5px 0;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clickable Text Subjects Form</h1>
+  <div class="form-container">
+    <div class="column">
+      <div class="subject" onclick="handleClick('Subject 1')">Subject 1</div>
+      <div class="subject" onclick="handleClick('Subject 2')">Subject 2</div>
+      <div class="subject" onclick="handleClick('Subject 3')">Subject 3</div>
+      <!-- Add more subjects to the first column as needed -->
+    </div>
+    <div class="column">
+      <div class="subject" onclick="handleClick('Subject 4')">Subject 4</div>
+      <div class="subject" onclick="handleClick('Subject 5')">Subject 5</div>
+      <!-- Add more subjects to the second column as needed -->
+    </div>
+    <div class="column">
+      <div class="subject" onclick="handleClick('Subject 6')">Subject 6</div>
+      <div class="subject" onclick="handleClick('Subject 7')">Subject 7</div>
+      <div class="subject" onclick="handleClick('Subject 8')">Subject 8</div>
+      <!-- Add more subjects to the third column as needed -->
+    </div>
+  </div>
+
+  <!-- JavaScript function to handle click event -->
+  <script>
+    function handleClick(subject) {
+      alert("You clicked: " + subject);
+      // Replace the alert with any desired action you want to perform when a subject is clicked
+    }
+  </script>
+</body>
+</html>
